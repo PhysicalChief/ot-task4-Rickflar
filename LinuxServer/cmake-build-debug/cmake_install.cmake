@@ -1,4 +1,4 @@
-# Install script for directory: /home/rickflar/lab4/test
+# Install script for directory: /home/rickflar/lab4/ot-task4-Rickflar/LinuxServer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/rickflar/lab4/test/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/rickflar/lab4/ot-task4-Rickflar/LinuxServer/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

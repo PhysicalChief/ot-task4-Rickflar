@@ -11,7 +11,7 @@
 #include <iomanip>
 
 using namespace std;
-const int SIZE_BUF = 1024;
+const int SIZE_BUF = 2048;
 
 void socket_initialize(int &listener, struct sockaddr_in &addr){
     listener = socket(AF_INET, SOCK_STREAM, 0);
@@ -61,7 +61,6 @@ int main()
     socket_initialize(listener, addr);
 
     // Accept connections.
-    vector <unsigned int> AcceptSocket;
     clientData client;
     vector <clientData> clients;
     unsigned int len = sizeof(client);
@@ -81,13 +80,12 @@ int main()
             FD_ZERO(&rfds);
             FD_SET(listener, &rfds);
             tv.tv_usec = 0.0;
-            cout<<"Test"<<endl;
             int selectRecv = select(listener+1,&rfds,NULL,NULL,&tv);
             for(auto &c : clients){
                 if((time(NULL)-c.seconds>120)&&(c.logged==-1)){
                     c.logged =2;
                     bytesSent = send(socket, "Your IP unblocked! You can login now", SIZE_BUF, 0);
-                    cout << endl << "IP " << string(inet_ntoa(c.Data.sin_addr))<<" unblocked! You can login now!" << endl;
+                    cout << endl << "[INFO] IP " << string(inet_ntoa(c.Data.sin_addr))<<" unblocked! You can login now!" << endl;
                 }
             }
             if (selectRecv<0){

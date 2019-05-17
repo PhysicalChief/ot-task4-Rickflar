@@ -1,4 +1,4 @@
-/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/rickflar/lab4/test
+/opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/rickflar/lab4/ot-task4-Rickflar/LinuxServer
 -- The C compiler identification is GNU 7.3.0
 -- The CXX compiler identification is GNU 7.3.0
 -- Check for working C compiler: /usr/bin/cc
@@ -15,4 +15,4 @@
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/rickflar/lab4/test/cmake-build-debug
+-- Build files have been written to: /home/rickflar/lab4/ot-task4-Rickflar/LinuxServer/cmake-build-debug
