@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/nikit/Desktop/test/main.cpp
+C:/Users/nikit/Desktop/ot-task4-Rickflar/WinClient/main.cpp
 stdio.h
 -
 iostream
@@ -14,9 +14,7 @@ iostream
 string
 -
 winsock2.h
-C:/Users/nikit/Desktop/test/winsock2.h
+C:/Users/nikit/Desktop/ot-task4-Rickflar/WinClient/winsock2.h
 WS2tcpip.h
--
-Windows.h
 -
 

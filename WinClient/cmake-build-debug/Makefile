@@ -49,24 +49,13 @@ RM = "C:\Program Files\JetBrains\CLion 2019.1\bin\cmake\win\bin\cmake.exe" -E re
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\nikit\Desktop\test
+CMAKE_SOURCE_DIR = C:\Users\nikit\Desktop\ot-task4-Rickflar\WinClient
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\nikit\Desktop\test\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\nikit\Desktop\ot-task4-Rickflar\WinClient\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	echo >nul && "C:\Program Files\JetBrains\CLion 2019.1\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache\fast: rebuild_cache
-
-.PHONY : rebuild_cache\fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -79,11 +68,22 @@ edit_cache\fast: edit_cache
 
 .PHONY : edit_cache\fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	echo >nul && "C:\Program Files\JetBrains\CLion 2019.1\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache\fast: rebuild_cache
+
+.PHONY : rebuild_cache\fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nikit\Desktop\test\cmake-build-debug\CMakeFiles C:\Users\nikit\Desktop\test\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nikit\Desktop\ot-task4-Rickflar\WinClient\cmake-build-debug\CMakeFiles C:\Users\nikit\Desktop\ot-task4-Rickflar\WinClient\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nikit\Desktop\test\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nikit\Desktop\ot-task4-Rickflar\WinClient\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -112,17 +112,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test
+# Target rules for targets named WinClient
 
 # Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) test
-.PHONY : test
+WinClient: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) WinClient
+.PHONY : WinClient
 
 # fast build rule for target.
-test\fast:
-	$(MAKE) -f CMakeFiles\test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test.dir\build
-.PHONY : test\fast
+WinClient\fast:
+	$(MAKE) -f CMakeFiles\WinClient.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\WinClient.dir\build
+.PHONY : WinClient\fast
 
 main.obj: main.cpp.obj
 
@@ -130,7 +130,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) -f CMakeFiles\test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test.dir\main.cpp.obj
+	$(MAKE) -f CMakeFiles\WinClient.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\WinClient.dir\main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -139,7 +139,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles\test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test.dir\main.cpp.i
+	$(MAKE) -f CMakeFiles\WinClient.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\WinClient.dir\main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -148,7 +148,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles\test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test.dir\main.cpp.s
+	$(MAKE) -f CMakeFiles\WinClient.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\WinClient.dir\main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -157,9 +157,9 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... rebuild_cache
-	@echo ... test
+	@echo ... WinClient
 	@echo ... edit_cache
+	@echo ... rebuild_cache
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

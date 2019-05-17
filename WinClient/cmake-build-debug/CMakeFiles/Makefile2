@@ -60,45 +60,45 @@ RM = "C:\Program Files\JetBrains\CLion 2019.1\bin\cmake\win\bin\cmake.exe" -E re
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\nikit\Desktop\test
+CMAKE_SOURCE_DIR = C:\Users\nikit\Desktop\ot-task4-Rickflar\WinClient
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\nikit\Desktop\test\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\nikit\Desktop\ot-task4-Rickflar\WinClient\cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/test.dir
+# Target rules for target CMakeFiles/WinClient.dir
 
 # All Build rule for target.
-CMakeFiles\test.dir\all:
-	$(MAKE) -f CMakeFiles\test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test.dir\depend
-	$(MAKE) -f CMakeFiles\test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\nikit\Desktop\test\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target test"
-.PHONY : CMakeFiles\test.dir\all
+CMakeFiles\WinClient.dir\all:
+	$(MAKE) -f CMakeFiles\WinClient.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\WinClient.dir\depend
+	$(MAKE) -f CMakeFiles\WinClient.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\WinClient.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\nikit\Desktop\ot-task4-Rickflar\WinClient\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target WinClient"
+.PHONY : CMakeFiles\WinClient.dir\all
 
 # Include target in all.
-all: CMakeFiles\test.dir\all
+all: CMakeFiles\WinClient.dir\all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles\test.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nikit\Desktop\test\cmake-build-debug\CMakeFiles 2
-	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\test.dir\all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nikit\Desktop\test\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles\test.dir\rule
+CMakeFiles\WinClient.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nikit\Desktop\ot-task4-Rickflar\WinClient\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\WinClient.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nikit\Desktop\ot-task4-Rickflar\WinClient\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles\WinClient.dir\rule
 
 # Convenience name for target.
-test: CMakeFiles\test.dir\rule
+WinClient: CMakeFiles\WinClient.dir\rule
 
-.PHONY : test
-
-# clean rule for target.
-CMakeFiles\test.dir\clean:
-	$(MAKE) -f CMakeFiles\test.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test.dir\clean
-.PHONY : CMakeFiles\test.dir\clean
+.PHONY : WinClient
 
 # clean rule for target.
-clean: CMakeFiles\test.dir\clean
+CMakeFiles\WinClient.dir\clean:
+	$(MAKE) -f CMakeFiles\WinClient.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\WinClient.dir\clean
+.PHONY : CMakeFiles\WinClient.dir\clean
+
+# clean rule for target.
+clean: CMakeFiles\WinClient.dir\clean
 
 .PHONY : clean
 
