@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rickflar/lab4/test/main.cpp
+sys/types.h
+-
+sys/socket.h
+-
+netinet/in.h
+-
+arpa/inet.h
+/home/rickflar/lab4/test/arpa/inet.h
+iostream
+-
+vector
+-
+string
+-
+cstring
+-
+cstdio
+-
+ctime
+-
+iomanip
+-
+
