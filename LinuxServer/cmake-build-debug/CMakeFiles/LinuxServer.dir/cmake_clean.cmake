@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/LinuxServer.dir/main.cpp.o"
+  "CMakeFiles/LinuxServer.dir/main.cpp.obj"
   "LinuxServer.pdb"
-  "LinuxServer"
+  "LinuxServer.exe"
+  "LinuxServer.exe.manifest"
+  "LinuxServer.lib"
 )
 
 # Per-language clean rules from dependency scanning.
