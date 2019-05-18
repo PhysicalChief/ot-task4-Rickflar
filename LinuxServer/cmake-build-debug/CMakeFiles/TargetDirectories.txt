@@ -1,3 +1,0 @@
-C:/Users/nikit/Desktop/ot-task4-Rickflar/LinuxServer/cmake-build-debug/CMakeFiles/LinuxServer.dir
-C:/Users/nikit/Desktop/ot-task4-Rickflar/LinuxServer/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/nikit/Desktop/ot-task4-Rickflar/LinuxServer/cmake-build-debug/CMakeFiles/rebuild_cache.dir

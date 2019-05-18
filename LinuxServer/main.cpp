@@ -24,7 +24,7 @@ void socket_initialize(int &listener, struct sockaddr_in &addr, char * port){
     // Bind the socket.
     addr.sin_family = AF_INET;
     addr.sin_addr.s_addr = INADDR_ANY;//INADDR_ANY позволяет подключиться машине с любым IP
-    addr.sin_port = htons((atoi(port));
+    addr.sin_port = htons(atoi(port));
 
     if(bind(listener, (struct sockaddr *)&addr, sizeof(addr)) < 0){
         cout << "[ERROR] Binding error!" << endl;
@@ -59,7 +59,7 @@ int main(int argc, char * argv[])
 
     int listener;
     struct sockaddr_in addr;
-    socket_initialize(listener, addr);
+    socket_initialize(listener, addr, argv[1]);
 
     // Accept connections.
     clientData client;
