@@ -16,6 +16,6 @@ addons:
 
 script:
   - cd LinuxServer/
-  - g++ main.cpp -o LinuxServer
+  - g++ -std=c++11  main.cpp -o LinuxServer
   - cd ../
   - bash startTesting.sh
