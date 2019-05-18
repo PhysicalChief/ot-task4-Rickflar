@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/nikit/Desktop/ot-task4-Rickflar/WinClient/main.cpp
+stdio.h
+-
+iostream
+-
+string
+-
+winsock2.h
+C:/Users/nikit/Desktop/ot-task4-Rickflar/WinClient/winsock2.h
+WS2tcpip.h
+-
+

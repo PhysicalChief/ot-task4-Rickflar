@@ -13,7 +13,7 @@
 using namespace std;
 const int SIZE_BUF = 2048;
 
-void socket_initialize(int &listener, struct sockaddr_in &addr){
+void socket_initialize(int &listener, struct sockaddr_in &addr, char * port){
     listener = socket(AF_INET, SOCK_STREAM, 0);
     if(listener < 0){
         cout << "[ERROR] Socket creation error!" << endl;
@@ -24,7 +24,7 @@ void socket_initialize(int &listener, struct sockaddr_in &addr){
     // Bind the socket.
     addr.sin_family = AF_INET;
     addr.sin_addr.s_addr = INADDR_ANY;//INADDR_ANY позволяет подключиться машине с любым IP
-    addr.sin_port = htons(27015);
+    addr.sin_port = htons((atoi(port));
 
     if(bind(listener, (struct sockaddr *)&addr, sizeof(addr)) < 0){
         cout << "[ERROR] Binding error!" << endl;
@@ -54,8 +54,9 @@ int alreadyConnected(clientData& client, vector<clientData>& clients){
     return 0;
 }
 
-int main()
+int main(int argc, char * argv[])
 {
+
     int listener;
     struct sockaddr_in addr;
     socket_initialize(listener, addr);
