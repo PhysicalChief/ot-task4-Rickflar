@@ -1,0 +1,20 @@
+    
+sudo: false
+language: cpp
+compiler:
+  - gcc
+os:
+  - linux
+
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - gcc-4.8
+
+script:
+  - cd LinuxServer/
+  - gcc main.cpp -o LinuxServer
+  - cd ../
+  - bash startTesting.sh

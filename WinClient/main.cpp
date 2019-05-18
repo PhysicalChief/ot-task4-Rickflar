@@ -7,7 +7,7 @@
 #pragma comment(lib, "ws2_32.lib")
 #pragma warning(disable: 4996)
 using namespace std;
-const int SIZE_BUF = 1024;
+const int SIZE_BUF = 2048;
 
 void socket_initialize(WSADATA &wsaData, SOCKET &m_socket, sockaddr_in &clientService, char * ip, char * port) {
     // Initialize Winsock.
@@ -41,8 +41,6 @@ char *write_message() {
 }
 
 int main(int argc, char *argv[]) {
-    argv[1] = "192.168.1.91";
-    argv[2] = "27015";
     WSADATA wsaData;
     SOCKET m_socket;
     struct sockaddr_in clientService;
