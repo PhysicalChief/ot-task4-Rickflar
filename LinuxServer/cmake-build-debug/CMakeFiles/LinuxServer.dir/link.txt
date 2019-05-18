@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/LinuxServer.dir/main.cpp.o  -o LinuxServer 

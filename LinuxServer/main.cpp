@@ -7,6 +7,7 @@
 #include <string>
 #include <cstring>
 #include <cstdio>//для getchar()
+#include <stdlib.h>
 #include <ctime>
 #include <iomanip>
 
