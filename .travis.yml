@@ -11,10 +11,11 @@ addons:
     sources:
     - ubuntu-toolchain-r-test
     packages:
-    - gcc-4.8
+    - gcc-8
+    - g++-8
 
 script:
   - cd LinuxServer/
-  - gcc main.cpp -o LinuxServer
+  - g++ main.cpp -o LinuxServer
   - cd ../
   - bash startTesting.sh
