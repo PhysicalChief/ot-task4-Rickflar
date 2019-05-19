@@ -4,6 +4,6 @@ if ! ./LinuxServer/LinuxServer hello
 then
     echo -e "[ERROR] Test failed\n"
 else
-    echo -e "[FAILED] Test passed\n"
+    echo -e "[INFO] Test passed\n"
     exit 1
 fi
