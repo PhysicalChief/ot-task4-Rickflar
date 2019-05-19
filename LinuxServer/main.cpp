@@ -57,7 +57,15 @@ int alreadyConnected(clientData& client, vector<clientData>& clients){
 
 int main(int argc, char * argv[])
 {
-
+    if(argc!=1){
+        cout<<"[ERROR] Invalid number of arguments"<<endl;
+        return 1;
+    }
+    long int port = atoi(argv[1]);
+    if(port==0){
+        cout<<"[ERROR] Invalid port"<<endl;
+        return 1;
+    }
     int listener;
     struct sockaddr_in addr;
     socket_initialize(listener, addr, argv[1]);
