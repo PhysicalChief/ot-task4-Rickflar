@@ -46,7 +46,6 @@ int main(int argc, char *argv[]) {
     struct sockaddr_in clientService;
     socket_initialize(wsaData, m_socket, clientService, argv[1], argv[2]);
     socklen_t len = sizeof(clientService);
-    // Send and receive data.
     int bytesSent;
     int bytesRecv = SOCKET_ERROR;
     char *sendbuf;

@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rickflar/lab4/ot-task4-Rickflar/LinuxClient/main.cpp
+sys/types.h
+-
+sys/socket.h
+-
+netinet/in.h
+-
+arpa/inet.h
+/home/rickflar/lab4/ot-task4-Rickflar/LinuxClient/arpa/inet.h
+iostream
+-
+vector
+-
+string
+-
+cstring
+-
+cstdio
+-
+stdlib.h
+-
+ctime
+-
+iomanip
+-
+unistd.h
+-
+

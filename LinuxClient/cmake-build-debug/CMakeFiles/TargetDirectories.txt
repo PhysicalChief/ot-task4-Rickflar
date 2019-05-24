@@ -1,0 +1,3 @@
+/home/rickflar/lab4/ot-task4-Rickflar/LinuxClient/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/rickflar/lab4/ot-task4-Rickflar/LinuxClient/cmake-build-debug/CMakeFiles/LinuxClient.dir
+/home/rickflar/lab4/ot-task4-Rickflar/LinuxClient/cmake-build-debug/CMakeFiles/edit_cache.dir
